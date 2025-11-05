@@ -1,6 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Read DATABASE_URL from environment (or .env via python-dotenv if your app loads it).
 # Avoid importing app.config here to prevent import-time circular issues when Alembic

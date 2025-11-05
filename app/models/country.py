@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Float, BigInteger, DateTime
 from sqlalchemy.sql import func
-from db import Base
+from app.db import Base
 
 class Country(Base):
     __tablename__ = "countries"
